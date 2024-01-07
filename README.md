@@ -14,9 +14,9 @@ With the development of society and the improvement of people's living standards
 Figure 1-1 Business use case model
 #### 1.3.2 Car Owner Business Activity Diagram
 ![Alt ​​text](picture1/pic3.png)  
-圖1-2車主業務活動圖
-#### 1.3.3管理員業務活動圖
-![图1-3管理员业务活动图 drawio](https://github.com/ycc17/final_report/assets/91513230/cd51d637-a400-421e-93e3-1079b635a18d)  
+Figure 1-2 Car Owner Business Activity Diagram
+#### 1.3.3 Administrator business activity diagram
+![Alt ​​text](picture1/pic4.png) 
 圖1-3管理員業務活動圖
 ## 第二章需求分析
 ### 2.1系統用例建模（根據對1.2的分析進行系統用例建模）
