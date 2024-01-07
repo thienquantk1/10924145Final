@@ -8,12 +8,12 @@ With the development of society and the improvement of people's living standards
 1. Administrators view vehicle information: Administrators log in to the system and can manage vehicle information (license plate number, entry and exit times, parking fees, special situation remarks), query vehicle information, add vehicle information, and delete vehicle information.
 ### 1.3 Business model
 #### 1.3.1 Business model
-### 1.3業務模型
-#### 1.3.1業務模型
+### 1.3 Business model
+#### 1.3.1 Business model
 ![Alt ​​text](picture1/pic2.png)
-圖1-1 業務用例模型
-#### 1.3.2車主業務活動圖
-![图1-2车主业务活动图 drawio](https://github.com/ycc17/final_report/assets/91513230/7f13b5c6-2e16-426e-8e64-8609262ce9aa)  
+Figure 1-1 Business use case model
+#### 1.3.2 Car Owner Business Activity Diagram
+![Alt ​​text](picture1/pic3.png)  
 圖1-2車主業務活動圖
 #### 1.3.3管理員業務活動圖
 ![图1-3管理员业务活动图 drawio](https://github.com/ycc17/final_report/assets/91513230/cd51d637-a400-421e-93e3-1079b635a18d)  
