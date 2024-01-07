@@ -1,11 +1,13 @@
-# **停車管理子系統**
-## 第一章問題定義
-### 1.1 業務調查
-隨著社會的發展和人民生活水準的提高，買車成為了人們奮鬥目標之一，當然已經有很多人買了車。可是隨著車輛的增加，車輛的停泊問題也隨之出現。人們的生活方式發生著深刻的變化。城市的交通用即便是這種變化所引起的現象之一。城市由於交通設施的增加造成的交通擁擠甚至混亂給人們的生活帶來了極大的不便，這種不便迫使人們尋求高技術的有效手段去解決這種不便，這就使得各個停車場需要更加先進，更完善的車輛管理系統，為車主帶來方便，使停車場的管理系統化。因此開發了停車場管理系統。
-### 1.2需求陳述
-1. 車主進入停車場:車主在停車場外，停車場外的顯示器上顯示空餘停車位的數量，若有空餘，車主來到擋車器前，系統自動識別車牌號，記錄車輛進入停車場的時間與車牌號，擋車器放行，車主進入停車場。若因某些原因，系統無法識別，如：車輛還未上牌，車輛使用的是臨時車牌，這種情況下，由管理員負責手動錄入車輛資訊（車牌號，進入時間，特殊情況備註：未上牌或臨時牌），無特殊情況則不需備註。
-1. 車主離開停車場：車主再次來到擋車器前，系統自動識別車牌號，記錄車輛離開停車場的時間，併計算停車費用，車主支付完成後，擋車器放行，車主離開停車場。若出現以上的特殊情況，則由管理員手動處理輸入訊息，費用則由系統完成計算。
-1. 管理員查看車輛資訊：管理員登陸該系統，可以對車輛資訊（車牌號，進出時間，停車費費用，特殊情況備註）進行管理，可查訊車輛信息，添加車輛信息，刪除車輛信息。
+# **Parking Management Subsystem**
+## Chapter 1 Problem Definition
+### 1.1 Business survey
+With the development of society and the improvement of people's living standards, buying a car has become one of people's goals. Of course, many people have already bought a car. However, as the number of vehicles increases, vehicle parking problems also arise. People's lifestyles are undergoing profound changes. Urban transportation is one of the phenomena caused by this change. Traffic congestion and even chaos caused by the increase in transportation facilities in cities have brought great inconvenience to people's lives. This inconvenience forces people to seek high-tech and effective means to solve this inconvenience, which makes each parking lot need to be more advanced. , a more complete vehicle management system brings convenience to car owners and systemizes parking lot management. Therefore a parking management system was developed.
+### 1.2 Requirements Statement
+1. The car owner enters the parking lot: The car owner is outside the parking lot. The number of available parking spaces is displayed on the display outside the parking lot. If there are any free parking spaces, the car owner comes to the car stop and the system automatically recognizes the license plate number and records the time the vehicle entered the parking lot. With the license plate number, the car blocker is released, and the car owner enters the parking lot. If for some reasons, the system cannot recognize the vehicle, for example: the vehicle has not yet been registered and the vehicle uses a temporary license plate. In this case, the administrator is responsible for manually entering the vehicle information (license plate number, entry time, special circumstances note: not registered) or temporary license), no remarks are required unless there are special circumstances.
+1. The car owner leaves the parking lot: When the car owner comes to the car stop again, the system automatically recognizes the license plate number, records the time when the vehicle leaves the parking lot, and calculates the parking fee. After the car owner completes the payment, the car stop is released and the car owner leaves the parking lot. If the above special circumstances occur, the administrator will manually process the input information, and the cost will be calculated by the system.
+1. Administrators view vehicle information: Administrators log in to the system and can manage vehicle information (license plate number, entry and exit times, parking fees, special situation remarks), query vehicle information, add vehicle information, and delete vehicle information.
+### 1.3 Business model
+#### 1.3.1 Business model
 ### 1.3業務模型
 #### 1.3.1業務模型
 ![Alt ​​text](picture1/pic2.png)
