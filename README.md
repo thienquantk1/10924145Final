@@ -8,7 +8,7 @@
 1. 管理員查看車輛資訊：管理員登陸該系統，可以對車輛資訊（車牌號，進出時間，停車費費用，特殊情況備註）進行管理，可查訊車輛信息，添加車輛信息，刪除車輛信息。
 ### 1.3業務模型
 #### 1.3.1業務模型
-![图1-1 业务用例模型 drawio](https://github.com/thienquantk1/10924145Final/blob/main/picture1/1)  
+![图1-1 业务用例模型 drawio](![Alt ​​text](picture1/1.png))  
 圖1-1 業務用例模型
 #### 1.3.2車主業務活動圖
 ![图1-2车主业务活动图 drawio](https://github.com/ycc17/final_report/assets/91513230/7f13b5c6-2e16-426e-8e64-8609262ce9aa)  
