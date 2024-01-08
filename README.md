@@ -218,106 +218,106 @@ lookCar()—View vehicle information.
 ### 4.4 Interactive interface design
 1. Log in to logOn.java
    
-![登陸介面設計](https://github.com/ycc17/final_report/assets/91513230/6d6e1850-e03c-411d-a5a0-fe0bba227b03)  
-  圖4-1登陸介面設計  
-2. 車輛資訊管理mainWindows.java
+![Alt ​​text](picture1/pic11.png) 
+ 
+Figure 4-1 Login interface design
+2. Vehicle information management mainWindows.java
 
-![車輛資訊管理介面設計](https://github.com/ycc17/final_report/assets/91513230/c9da395d-27fc-47a6-9565-9644dbda69f5)  
-  圖4-2車輛資訊管理介面設計  
+![Alt ​​text](picture1/pic12.png) 
+Figure 4-2 Vehicle information management interface design 
   
-![瀏覽車輛信息](https://github.com/ycc17/final_report/assets/91513230/c407e72f-5624-4d1a-8d09-2f93d8b5b409)  
-  圖4-3瀏覽車輛信息  
+![Alt ​​text](picture1/pic13.png)  
+Figure 4-3 Browsing vehicle information 
   
-![新增車輛信息](https://github.com/ycc17/final_report/assets/91513230/600271b9-384a-41a4-bba1-f9dca2114fe7)  
-  圖4-4新增車輛信息  
+![Alt ​​text](picture1/pic14.png) 
+Figure 4-4 Add vehicle information
    
-![新增出庫車輛信息](https://github.com/ycc17/final_report/assets/91513230/7c0a769a-28c1-4512-86b6-eccdf061c940)  
-  圖4-5新增出庫車輛信息  
+![Alt ​​text](picture1/pic15.png)  
+Figure 4-5 Added outbound vehicle information
   
-6. 刪除車輛資訊DelCar.java
+6. Delete vehicle information DelCar.java
    
-![刪除車輛信息](https://github.com/ycc17/final_report/assets/91513230/48d96d0e-7108-4efc-bd0d-24a544d73d82)  
-  圖4-6刪除車輛信息
+![Alt ​​text](picture1/pic16.png) 
+Figure 4-6 Delete vehicle information
 
-7. 查詢車輛資訊findCar.java
-   
-   ![查詢車輛信息](https://github.com/ycc17/final_report/assets/91513230/70b1d6ec-4677-4ba7-b79a-8872b166137e)  
-  圖4-7查詢車輛信息  
-## 第五章面向對象實現
-### 5.1停車場資訊管理系統編碼實現
-本系統基於Java+MySQL+swing，
-![1](https://github.com/ycc17/final_report/assets/91513230/f4e9663e-c8cf-4f76-96d6-db25bb49c423)
-## 第六章軟體測試與部署
-### 6.1 軟體測試
-本停車管理系統在設計開發過程中就採用軟體測試的V模型來規範軟體測試。V型推崇開發與測試並行的方式，在開發完一個功能模組後就進行對應的單元測試，注重細節方面的問題。接著再進行整合測試，主要測試模組間的介面能否互通的問題。最後，在進行功能測試來偵測整個系統運作是否正常。
+7. Query vehicle information findCar.java
+   ![Alt ​​text](picture1/pic17.png)  
+Figure 4-7 Query vehicle information
+## Chapter 5 Object-oriented Implementation
+### 5.1 Coding implementation of parking lot information management system
+This system is based on Java+MySQL+swing.
+![Alt ​​text](picture1/pic18.png) 
+## Chapter 6 Software Testing and Deployment
+### 6.1 Software Testing
+During the design and development process of this parking management system, the V model of software testing is used to standardize software testing. V-type advocates the parallel approach of development and testing. After developing a functional module, the corresponding unit test is conducted, paying attention to details. Then conduct integration testing, mainly testing whether the interfaces between modules can communicate with each other. Finally, functional testing is performed to detect whether the entire system is functioning properly.
 
-在測試過程中主要採取的是功能測試，透過功能測試可以逐一檢測各個功能是否可以滿足停車場管理人員的需求。
+During the testing process, functional testing is mainly used. Through functional testing, each function can be tested one by one to see whether it can meet the needs of parking lot managers.
 
-### 6.2 功能測試
-功能測試是一種黑盒測試，這是根據軟體需求的要求設計測試案例並驗證系統功能的過程，並且透過與測試系統的外部輸入與輸出的關係來驗證。功能測試在於測試功能是否正常，因此不考慮內部的實作方式，測試的前提是系統已經處於運作狀態。
+### 6.2 Functional testing
+Functional testing is a type of black-box testing, which is the process of designing test cases and verifying system functions based on software requirements, and through the relationship with the external input and output of the test system. Functional testing is to test whether the function is normal, so the internal implementation method is not considered. The premise of testing is that the system is already in operation.
 
-本停車管理系統對在設計開發過程中多次對系統功能進行測試，確保功能的正常運作。
+This parking management system has tested the system functions many times during the design and development process to ensure the normal operation of the functions.
 
-### 6.3功能測試總結
-主要針對停車場管理系統的登入、車輛駛入、車輛駛出、車輛資訊的增刪改查作業進行功能測試。測試過程中介面UI的顯示都符合預期，功能方面符合需求。
+### 6.3 Summary of functional testing
+Functional testing is mainly conducted on the login of the parking lot management system, vehicle entry, vehicle exit, and addition, deletion, modification and check of vehicle information. During the testing process, the display of the interface UI was in line with expectations, and the functions met the requirements.
 
-### 6.4用例測試
-6.4.1登入用例測試
-| 測試用例編號 | Login_01 |
+### 6.4 Use case testing
+6.4.1 Login use case test
+| Test case number | Login_01 |
 | :---: | :---: |
-| 測試標題  | 輸入正確的使用者名稱和與之對應的密碼  |
-| 預置條件  | 系統存在該用戶  |
-| 輸入  | Username:admin123<br>Password:123456  |
-| 操作步驟  | 開啟系統登入頁面，輸入<br>username(admin123),password(123456)  |
-| 預期輸出  | 密碼輸入時被隱藏，管理員登入系統首頁  |
-| **測試用例編號** | **Login_02** |
-| 測試標題  | 輸入錯誤的使用者名稱或錯誤的密碼  |
-| 預置條件  | 系統不存在該用戶  |
-| 輸入  | Username:隨機<br>Password:隨機  |
-| 操作步驟  | 開啟系統登入頁面，輸入username,password  |
-| 預期輸出  | 提示用戶“登入失敗！用戶名或密碼錯誤”  |
+| Test Title | Enter the correct username and corresponding password |
+| Preset conditions | This user exists in the system |
+| Enter | Username:admin123<br>Password:123456 |
+| Operation steps | Open the system login page and enter <br>username(admin123),password(123456) |
+| Expected output | The password is hidden when entering, and the administrator logs in to the system homepage |
+| **Test Case Number** | **Login_02** |
+| Test title | Incorrect username or wrong password entered |
+| Preset conditions | This user does not exist in the system |
+| Input | Username:random<br>Password:random |
+| Operation steps | Open the system login page and enter username and password |
+| Expected output | Prompts the user "Login failed! Wrong username or password" |
 
-6.4.2添加資訊用例測試
+6.4.2 Add information use case test
 
-| 測試用例編號 | Add_01 |
+| Test case number | Add_01 |
 | :---: | :---: |
-| 測試標題  | 增加後可在頁面中查看該信息  |
-| 預置條件  | 管理員登入成功  |
-| 輸入  | 輸入要新增的信息  |
-| 操作步驟  | 點選【新增】，輸入對應的訊息，點選【新增】  |
-| 預期輸出  | 終端輸出“添加成功！”  |
+| Test title | After adding, the information can be viewed on the page |
+| Preset conditions | Administrator login successful |
+| Input | Enter the information to be added |
+| Operation steps | Click [Add], enter the corresponding message, and click [Add] |
+| Expected output | Terminal output "Added successfully!" |
 
-6.4.3查詢資訊用例測試
+6.4.3 Query information use case test
 
-| 測試用例編號 | Find |
+| Test case number | Find |
 | :---: | :---: |
-| 測試標題  | 輸入車牌號碼後可以看到相關訊息  |
-| 預置條件  | 管理員登入成功，所查詢的資訊存在  |
-| 輸入  | 相應車牌號  |
-| 操作步驟  | 輸入要查詢的車牌號碼訊息，點選【查詢】  |
-| 預期輸出  | 介面顯示出其相關的資訊。  |
+| Test title | After entering the license plate number, you can see relevant messages |
+| Preset conditions | The administrator has logged in successfully and the information being queried exists |
+| Input | Corresponding license plate number |
+| Operation steps | Enter the license plate number information to be queried and click [Search] |
+| Expected Output | The interface displays its relevant information. |
 
-6.4.4瀏覽資訊用例測試
+6.4.4 Browse information use case test
 
-| 測試用例編號 | Look |
+| Test case number | Look |
 | :---: | :---: |
-| 測試標題  | 瀏覽所有的車輛信息  |
-| 預置條件  |  管理員登入成功，所瀏覽資訊存在 |
-| 輸入  | 無  |
-| 操作步驟  | 點選【瀏覽車輛資訊】  |
-| 預期輸出  | 瀏覽頁面顯示所有的車輛資訊詳情  |
+| Test title | Browse all vehicle information |
+| Preset conditions | The administrator has successfully logged in and the browsed information exists |
+| Input | None |
+| Operation steps | Click [Browse vehicle information] |
+| Expected output | Browse the page to display all vehicle information details |
 
-6.4.5刪除資訊用例測試
+6.4.5 Delete information use case test
 
-| 測試用例編號 | Delete |
+| Test case number | Delete |
 | :---: | :---: |
-| 測試標題  | 確認刪除訊息後無法看到該訊息  |
-| 預置條件  |  管理員登入成功，所刪除資訊存在 |
-| 輸入  | 無  |
-| 操作步驟  | 輸入要刪除的車牌號碼訊息，點選【刪除】  |
-| 預期輸出  | 終端輸出“刪除成功！”，頁面中該資訊不存在  |
+| Test title | The message cannot be seen after confirming the deletion |
+| Preset conditions | The administrator has logged in successfully and the deleted information exists |
+| Input | None |
+| Operation steps | Enter the license plate number information to be deleted and click [Delete] |
+| Expected output | The terminal outputs "Deletion successful!", the information does not exist on the page |
 
-### 6.5本章小結
-本章節主要介紹了對停車場管理系統進行功能測試的必要性和測試結果，針對目前停車管理系統設計了一系列的功能測試案例。透過系統測試使系統更能符合預期要求，並能偵測和修復一些開發過程中的bug。
-# 參考文章
+### 6.5 Summary of this chapter
+This chapter mainly introduces the necessity and test results of functional testing of the parking management system, and designs a series of functional test cases for the current parking management system. Through system testing, the system can better meet the expected requirements, and some bugs in the development process can be detected and fixed.
+# Reference article
 - https://blog.csdn.net/qq_61839797/article/details/128164668
