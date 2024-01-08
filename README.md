@@ -99,124 +99,124 @@ Table 2-7 "View vehicle information" use case specification
 | **Exception event flow:** | None |
 | **Postconditions:** | None |
 
-表2-8 「查詢車輛​​資訊」用例規約
+Table 2-8 "Query vehicle information" use case specification
 
-| 用例名稱：  | 	查詢車輛資訊 |
+| Use case name: | Query vehicle information |
 | :--- | :--- |
-| **用例id：**  | P6  |
-| **參與者：**  | 管理員  |
-| **用例說明：** |	管理員查詢車輛資訊  |
-| **前置條件：**  | 管理者已登陸系統  |
-| **主事件流：**  | 1. 管理員選擇“查找”，使用案例開始。<br> 2. 管理員輸入搜尋的車牌號碼。<br> 3. 系統搜尋符合條件的車輛。<br> 4. 系統顯示車輛相關訊息。<br> 5. 其他 <br><pre>5.1 系統告訴管理員未找到匹配的車輛</pre>  |
-| **異常事件流：**  | 無  |
-| **後置條件：**  | 無  |
+| **Use case id:** | P6 |
+| **Participants:** | Administrator |
+| **Use case description:** | Administrator queries vehicle information |
+| **Prerequisite:** | The administrator has logged into the system |
+| **Main event flow:** | 1. The administrator selects "Find" and the use case begins. <br> 2. The administrator enters the searched license plate number. <br> 3. The system searches for vehicles that meet the conditions. <br> 4. The system displays vehicle-related information. <br> 5. Others <br><pre>5.1 The system tells the administrator that no matching vehicle was found</pre> |
+| **Exception event flow:** | None |
+| **Postconditions:** | None |
 
-表2-9「錄入車輛資訊」用例規約
+Table 2-9 "Enter vehicle information" use case specification
 
-| 用例名稱：  | 	新增車輛資訊 |
+| Use case name: | Add vehicle information |
 | :--- | :--- |
-| **用例id：**  | P7  |
-| **參與者：**  | 管理員  |
-| **用例說明：** |	管理員手動輸入車輛訊息  |
-| **前置條件：**  | 管理者已登陸系統  |
-| **主事件流：**  | 1. 管理員選擇“新增資訊”，使用案例開始。<br> 2. 系統顯示車輛詳細資料填選表單，包括車牌號碼及進入時間（必填）、<br> 3. 同時（未完成新增）<br><pre>3.1 管理員選擇一個欄位並新增其值。<br>  1. 系統要求管理員確認新增。<br>  2. 管理員選擇確定。<br>  3. 系統將新的車輛添加到目錄中。</pre>  |
-| **異常事件流：**  | 無  |
-| **後置條件：**  | 	新的車輛資訊已添加到目錄中  |
+| **Use case id:** | P7 |
+| **Participants:** | Administrator |
+| **Use case description:** | The administrator manually enters vehicle information |
+| **Prerequisite:** | The administrator has logged into the system |
+| **Main event flow:** | 1. The administrator selects "Add information" and the use case starts. <br> 2. The system displays a form for filling in vehicle details, including license plate number and entry time (required),<br> 3. At the same time (new addition not completed)<br><pre>3.1 The administrator selects a field and add its value. <br> 1. The system asks the administrator to confirm the addition. <br> 2. The administrator selects OK. <br> 3. The system adds the new vehicle to the catalog. </pre> |
+| **Exception event flow:** | None |
+| **Post-conditions:** | New vehicle information has been added to the directory |
 
-表2-10 「刪除車輛資訊」用例規約
+Table 2-10 "Delete vehicle information" use case specification
 
-| 用例名稱：  | 	刪除車輛訊息 |
+| Use case name: | Delete vehicle information |
 | :--- | :--- |
-| **用例id：**  | P8  |
-| **參與者：**  | 管理員  |
-| **用例說明：** |	管理員手動刪除車輛訊息  |
-| **前置條件：**  | 管理者已登陸系統  |
-| **主事件流：**  | 1. 當管理員選擇“刪除資訊”時，用例開始。<br> 2. 系統向管理員詢問車輛識別碼。<br> 3. 管理員輸入車輛識別碼。<br> 4. 系統要求管理員確認刪除。<br> 5. 管理員選擇確定。<br> 6. 系統刪除車輛詳細資料。  |
-| **異常事件流：**  | 無  |
-| **後置條件：**  | 	車輛的詳細資料已從系統中刪除。  |
-## 第三章面向對象分析
-### 3.1用例實現
-使用順序圖，按BCE架構實現每個用例  
-![图3-1登陆时序图 drawio](https://github.com/ycc17/final_report/assets/91513230/f987db6e-80b0-4532-8fe2-815cb967105b)  
+| **Use case id:** | P8 |
+| **Participants:** | Administrator |
+| **Use case description:** | Administrator manually deletes vehicle information |
+| **Prerequisite:** | The administrator has logged into the system |
+| **Main event flow:** | 1. When the administrator selects "Delete information", the use case starts. <br> 2. The system asks the administrator for the vehicle identification code. <br> 3. The administrator enters the vehicle identification code. <br> 4. The system asks the administrator to confirm the deletion. <br> 5. The administrator selects OK. <br> 6. The system deletes vehicle details. |
+| **Exception event flow:** | None |
+| **Postconditions:** | The vehicle details have been deleted from the system. |
+## Chapter 3 Object-oriented Analysis
+### 3.1 Use case implementation
+Use sequence diagrams to implement each use case according to the BCE architecture
+![Alt ​​text](picture1/pic6.png)   
 
-圖3-1登陸時序圖
+Figure 3-1 Login sequence diagram
 
-![图3-2删除车辆信息时序图 drawio](https://github.com/ycc17/final_report/assets/91513230/f67a2670-8885-459c-b3a6-ff645de3587d)  
+![Alt ​​text](picture1/pic7.png)  
 
-圖3-2刪除車輛資訊時序圖
+Figure 3-2 Deleting vehicle information sequence diagram
 
-![图3-3添加车辆信息时序图 drawio](https://github.com/ycc17/final_report/assets/91513230/b6fa860d-9e86-487c-98f1-61c61410f840)  
+![Alt ​​text](picture1/pic8.png) 
 
-圖3-3新增車輛資訊時序圖
+Figure 3-3 Sequence diagram of adding vehicle information
 
-![图3-5查找车辆信息时序图 drawio](https://github.com/ycc17/final_report/assets/91513230/df932e19-6898-40da-bebe-fe85f03436b7)  
+![Alt ​​text](picture1/pic9.png)  
 
-圖3-5找出車輛資訊時序圖  
+Figure 3-5 Find vehicle information sequence diagram
 
-![图3-6查看车辆信息时序图 drawio](https://github.com/ycc17/final_report/assets/91513230/296d36a3-1360-4c6f-a1d3-7f5788fc3773)  
+![Alt ​​text](picture1/pic10.png)   
 
-圖3-6查看車輛資訊時序圖
-### 3.2分析類模型
-建立系統的分析類別圖，為每個類別分配職責、屬性，及對類別之間的關係建模
-![3 2分析类模型 drawio](https://github.com/ycc17/final_report/assets/91513230/81ca3d94-a8ab-4024-9ac1-afe263168152)
+Figure 3-6 Sequence diagram for viewing vehicle information
+### 3.2 Analysis model
+Establish a systematic analysis category diagram, assign responsibilities and attributes to each category, and model the relationships between categories
+![Alt ​​text](picture1/pic1.png)  
 
-## 第四章物件導向設計
-### 4.1資料庫設計
-資料庫結構
-1. 車輛資訊表
+## Chapter 4 Object-Oriented Design
+### 4.1 Database design
+Database structure
+1. Vehicle information table
    
-| 列名  | 資料類型 | 可否為空 | 說明 | 備註 |
+| Column name | Data type | Can be empty | Description | Remarks |
 | :---: | :---: | :---: | :---: | :---: |
-| **Carin**  | Datetime  | Not null  | 入庫時間  | 主碼  |
-| **Carout**  | Datetime  |   | 出庫時間  |  |
-| **carpay** |	Float(20)  |  | 停車費用  |   |
-| **carno**  | Varchar(20)  | Not null  | 車牌號  | 主碼  |
+| **Carin** | Datetime | Not null | Storage time | Master code |
+| **Carout** | Datetime | | Carout time | |
+| **carpay** | Float(20) | | Parking fee | |
+| **carno** | Varchar(20) | Not null | License plate number | Master code |
 
-表3.5車輛資訊表
+Table 3.5 Vehicle information table
 
-2. 管理員資訊表
+2. Administrator information table
 
-| 列名  | 資料類型 | 可否為空 | 說明 | 備註 |
+| Column name | Data type | Can be empty | Description | Remarks |
 | :---: | :---: | :---: | :---: | :---: |
-| **rId**  | varchar（20）  | Not null  | 管理員帳號  | 主碼  |
-| **password**  | Varchar(20)  | Not null  | 密碼  |   |
+| **rId** | varchar(20) | Not null | Administrator account | Master code |
+| **password** | Varchar(20) | Not null | Password | |
 
-表4.1 管理員資訊表
-### 4.2設計類
-實體類別
+Table 4.1 Administrator information table
+### 4.2 Design class
+Entity class
 
-在OOA階段得到的類別圖中有兩個實體，分別是車輛和管理員
+There are two entities in the class diagram obtained in the OOA stage, namely vehicle and administrator.
 
-- 邊界類
+- Boundary class
 
-1. 管理者登陸邊界類別—LogOn.java
-2. 車輛資訊管理—mainWindowsjava
-3. 輸入車輛資訊介面—addcar.java
-4. 查詢車輛資訊介面—findcar.java
-5. 刪除車輛資訊介面—delcar.java
+1. Administrator login boundary category—LogOn.java
+2. Vehicle information management—mainWindowsjava
+3. Enter the vehicle information interface—addcar.java
+4. Query vehicle information interface—findcar.java
+5. Delete vehicle information interface—delcar.java
 
-- 控制類
+- Control class
 
-1. 登陸控制類別—接收登陸請求，控制登陸過程的狀態，呼叫模型，轉送請求到管理者登陸邊界類logOn.java。
-2. 車輛資訊管理—接收請求，控制車輛資訊管理的執行狀態，呼叫模型，得到處理結果，轉送請求到車輛資訊管理mainWindows.java。
-3. 輸入車輛資訊—接收輸入請求，控制輸入車輛資訊的執行狀態，呼叫模型，得到處理結果，轉發請求到輸入車輛資訊addcar.java。
-4. 查詢車輛資訊—接收查詢請求，控制查詢車輛資訊的執行狀態，呼叫模型，得到處理結果，轉發請求到查詢車輛資訊FindCar.java。
-5. 刪除車輛資訊—接收刪除要求，控制刪除車輛資訊的執行狀態，呼叫模型，得到處理結果，轉發請求到刪除車輛資訊DelCar.java。
-### 4.3軟體體系結構
-本系統採用MVC設計模式建構程式結構，模型用來完成業務邏輯的封裝，控制器控制各個程式流程，也就是上一個設計的控制類別的實作；視圖用來顯示頁面，也就是上一步設計的邊界類別的實作。
+1. Login control category - receives login requests, controls the status of the login process, calls the model, and forwards the request to the administrator login boundary class logOn.java.
+2. Vehicle information management - receives the request, controls the execution status of vehicle information management, calls the model, obtains the processing result, and forwards the request to vehicle information management mainWindows.java.
+3. Input vehicle information—Receive the input request, control the execution status of the input vehicle information, call the model, get the processing results, and forward the request to the input vehicle information addcar.java.
+4. Query vehicle information—Receive the query request, control the execution status of querying vehicle information, call the model, obtain the processing results, and forward the request to FindCar.java for querying vehicle information.
+5. Delete vehicle information—Receive the deletion request, control the execution status of deleting vehicle information, call the model, obtain the processing results, and forward the request to delete vehicle information DelCar.java.
+### 4.3 Software architecture
+This system uses the MVC design pattern to construct the program structure. The model is used to complete the encapsulation of business logic. The controller controls each program process, which is the implementation of the control category designed in the previous step. The view is used to display the page, which is the one designed in the previous step. Implementation of boundary categories.
 
-模型部分除了包含上一步驟設計的實體類別的屬性封裝外，還需要實作實體類別對應的各個方法，對全部的業務功能進行分類，設計各個業務的Bean如下。
+In addition to the attribute encapsulation of the entity category designed in the previous step, the model part also needs to implement various methods corresponding to the entity category, classify all business functions, and design the beans for each business as follows.
 
-carService實現車輛資訊管理相關的業務，包含以下方法：
+carService implements services related to vehicle information management, including the following methods:
 ```
-add_in()---在車輛資訊表中新增一條車輛入庫資訊。  
-Add_out()---在車輛資訊表中新增一輛車出庫資訊。  
-FindCar()---查詢車輛信息。  
-delCar()---刪除車輛訊息。  
-lookCar()—查看車輛資訊。  
+add_in()---Add a vehicle warehousing information to the vehicle information table.
+Add_out()---Add a vehicle's outbound information to the vehicle information table.
+FindCar()---Query vehicle information.
+delCar()---Delete vehicle information.
+lookCar()—View vehicle information.
 ```
-### 4.4互動介面設計
-1. 登陸logOn.java
+### 4.4 Interactive interface design
+1. Log in to logOn.java
    
 ![登陸介面設計](https://github.com/ycc17/final_report/assets/91513230/6d6e1850-e03c-411d-a5a0-fe0bba227b03)  
   圖4-1登陸介面設計  
