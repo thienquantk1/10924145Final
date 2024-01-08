@@ -17,87 +17,87 @@ Figure 1-1 Business use case model
 Figure 1-2 Car Owner Business Activity Diagram
 #### 1.3.3 Administrator business activity diagram
 ![Alt ​​text](picture1/pic4.png) 
-圖1-3管理員業務活動圖
-## 第二章需求分析
-### 2.1系統用例建模（根據對1.2的分析進行系統用例建模）
-#### 2.1.1參與者概述
-1. 車主－停車服務
-1. 管理員－管理車輛進出的相關訊息
-#### 2.1.2用例概述
-1. 車主來到有剩餘車位的停車場，進入停車場停車，支付停車費用後離開停車場
-1. 管理員輸入正確的帳號和密碼登陸系統，管理車輛進出的訊息，包括車牌號碼，進出時間，停車費費用。
-#### 2.1.3用例關係
-正在上傳…重新上傳取消  
-![图2-1系统用例图 drawio](https://github.com/ycc17/final_report/assets/91513230/636676b9-6c02-40d8-82dd-9f4351f148d4)  
-圖2-1系統用例圖
-### 2.2用例規約說明
-表2-1 「進入停車場」用例規約a
+Figure 1-3 Administrator business activity diagram
+## Chapter 2 Requirements Analysis
+### 2.1 System use case modeling (system use case modeling based on the analysis of 1.2)
+#### 2.1.1 Overview of Participants
+1. Car Owner-Parking Service
+1. Administrator-manage information related to vehicle entry and exit
+#### 2.1.2 Use case overview
+1. The car owner comes to a parking lot with remaining parking spaces, enters the parking lot to park, pays the parking fee and leaves the parking lot
+1. The administrator enters the correct account number and password to log in to the system and manage vehicle entry and exit information, including license plate number, entry and exit time, and parking fees.
+#### 2.1.3 Use case relationship
+Uploading...re-upload canceled 
+![Alt ​​text](picture1/pic5.png)   
+Figure 2-1 System use case diagram
+### 2.2 Use case specification description
+Table 2-1 "Enter the parking lot" use case specification a
 
-| 用例名稱：  | 進入停車場 |
+| Use case name: | Enter parking lot |
 | :--- | :--- |
-| **用例id：**  | P1  |
-| **參與者：**  | 車主  |
-| **用例說明：** |	車主進入停車場  |
-| **前置條件：**  | 車主驅車到擋車器前  |
-| **主事件流：**  | 1. 車主開車到擋車器前，用例開始。<br> 2. 系統自動辨識車牌號碼，記錄車牌號碼與進入停車場的時間。<br> 3. 記錄完成，擋車器放行。<br> 4. 車主驅車進入停車場。  |
-| **異常事件流：**  | 無法辨識車牌號  |
-| **後置條件：**  | 車輛資訊記錄成功  |
+| **Use case id:** | P1 |
+| **Participants:** | Car Owner |
+| **Use case description:** | The car owner enters the parking lot |
+| **Prerequisites:** | The car owner drives to the car stop |
+| **Main event flow:** | 1. The car owner drives to the car stop and the use case starts. <br> 2. The system automatically recognizes the license plate number and records the license plate number and the time of entering the parking lot. <br> 3. After the recording is completed, the vehicle blocker is released. <br> 4. The car owner drove into the parking lot. |
+| **Abnormal event flow:** | Unable to recognize license plate number |
+| **Post-condition:** | Vehicle information recorded successfully |
 
-表2-2「進入停車場」用例規約b
+Table 2-2 "Enter the parking lot" use case specification b
 
-| 用例名稱：  | 進入停車場 |
+| Use case name: | Enter parking lot |
 | :--- | :--- |
-| **異常事件流：**  | 車主驅車到擋車器前，系統無法辨識車牌號  |
-| 1. 車主開車到擋車器前，用例開始。<br> 2. 輸入車輛訊息。<br> 3. 記錄完成，擋車器放行。<br> 4. 車主驅車進入停車場。  |
-| **後置條件：**  | 車輛資訊記錄成功  |
+| **Abnormal event flow:** | The car owner drove to the car barrier and the system could not recognize the license plate number |
+| 1. The car owner drives to the car stop and the use case starts. <br> 2. Enter vehicle information. <br> 3. After the recording is completed, the vehicle blocker is released. <br> 4. The car owner drove into the parking lot. |
+| **Post-condition:** | Vehicle information recorded successfully |
 
-表2-3「支付費用」用例規約
+Table 2-3 "Payment" use case specification
 
-| 用例名稱：  | 	支付費用 |
+| Use case name: | Pay fees |
 | :--- | :--- |
-| **用例id：**  | P2  |
-| **參與者：**  | 車主  |
-| **用例說明：** |	車主結算費用  |
-| **前置條件：**  | 車主驅車到擋車器前  |
-| **主事件流：**  | 1. 車主開車到擋車器前，開始用例。<br> 2. 系統會自動辨識車牌號，找到車輛進入停車場的相關資訊（車牌號，進入停車場的時間），並記錄離開停車場的時間。<br> 3. 系統核對車輛訊息，計算停車費用。<br> 4. 車主支付停車費。  |
-| **異常事件流：**  | 無  |
-| **後置條件：**  | 支付成功  |
+| **Use case id:** | P2 |
+| **Participants:** | Car Owner |
+| **Use case description:** | Car owner settlement fee |
+| **Prerequisites:** | The car owner drives to the car stop |
+| **Main event flow:** | 1. The car owner drives to the car stop and starts the use case. <br> 2. The system will automatically identify the license plate number, find relevant information about the vehicle entering the parking lot (license plate number, time of entering the parking lot), and record the time of leaving the parking lot. <br> 3. The system checks the vehicle information and calculates the parking fee. <br> 4. The car owner pays the parking fee. |
+| **Exception event flow:** | None |
+| **Post-conditions:** | Payment successful |
 
-表2-4 「離開停車場」用例規約
+Table 2-4 "Leave the parking lot" use case specification
 
-| 用例名稱：  | 	離開停車場 |
+| Use case name: | Leaving the parking lot |
 | :--- | :--- |
-| **用例id：**  | P3  |
-| **參與者：**  | 車主  |
-| **用例說明：** |	車主離開停車場  |
-| **前置條件：**  | 車主支付成功  |
-| **主事件流：**  | 1. 車主支付成功後，用例開始。<br> 2. 擋車器放行，車主開車離開停車場。  |
-| **異常事件流：**  | 無  |
-| **後置條件：**  | 無  |
+| **Use case id:** | P3 |
+| **Participants:** | Car Owner |
+| **Use case description:** | The car owner leaves the parking lot |
+| **Prerequisite:** | The car owner paid successfully |
+| **Main event flow:** | 1. After the car owner pays successfully, the use case starts. <br> 2. The car blocker releases and the car owner drives out of the parking lot. |
+| **Exception event flow:** | None |
+| **Postconditions:** | None |
 
-表2-5 「登陸」用例規約a
+Table 2-5 "Login" use case specification a
 
-| 用例名稱：  | 	登陸 |
+| Use case name: | Login |
 | :--- | :--- |
-| **用例id：**  | P4  |
-| **參與者：**  | 管理員  |
-| **用例說明：** |	管理者登陸系統  |
-| **前置條件：**  | 無  |
-| **主事件流：**  | 1. 管理員進入到登陸介面，用例開始。<br> 2. 當管理員未經過身份驗證且身份驗證嘗試次數小於或等於三時。<br>  <pre> 1.系統要求管理員提供其管理員帳號和密碼。<br> 2. 管理員輸入其管理員帳號和密碼。</pre> 3. 管理員帳號和密碼正確無誤。<br> 4. 系統對管理員進行身份驗證。  |
-| **異常事件流：**  | 管理員身份驗證失敗。  |
-| **後置條件：**  | 管理員登陸系統。  |
+| **Use case id:** | P4 |
+| **Participants:** | Administrator |
+| **Use case description:** | Administrator login system |
+| **Preconditions:** | None |
+| **Main event flow:** | 1. The administrator enters the login interface and the use case starts. <br> 2. When the administrator is not authenticated and the number of authentication attempts is less than or equal to three. <br> <pre> 1. The system requires the administrator to provide his administrator account and password. <br> 2. The administrator enters his or her administrator account and password. </pre> 3. The administrator account and password are correct. <br> 4. The system authenticates the administrator. |
+| **Exception Event Flow:** | Administrator authentication failed. |
+| **Post-conditions:** | The administrator logs in to the system. |
 
-表2-7 「查看車輛資訊」使用案例規約
+Table 2-7 "View vehicle information" use case specification
 
-| 用例名稱：  | 	查看車輛資訊 |
+| Use case name: | View vehicle information |
 | :--- | :--- |
-| **用例id：**  | P5  |
-| **參與者：**  | 管理員  |
-| **用例說明：** |	管理員查看車輛資訊  |
-| **前置條件：**  | 管理者已登陸系統  |
-| **主事件流：**  | 1. 當管理員選擇要瀏覽的車輛類型時，使用案例開始。<br> 2. 系統將顯示車輛資訊目錄。  |
-| **異常事件流：**  | 無  |
-| **後置條件：**  | 無  |
+| **Use case id:** | P5 |
+| **Participants:** | Administrator |
+| **Use case description:** | Administrator views vehicle information |
+| **Prerequisite:** | The administrator has logged into the system |
+| **Main Event Flow:** | 1. The use case starts when the administrator selects a vehicle type to browse. <br> 2. The system will display the vehicle information directory. |
+| **Exception event flow:** | None |
+| **Postconditions:** | None |
 
 表2-8 「查詢車輛​​資訊」用例規約
 
